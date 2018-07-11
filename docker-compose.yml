@@ -1,0 +1,10 @@
+version: '2'
+services:
+  qmk_firmware:
+    build: .
+    environment:
+      keyboard: ergodox_ez
+      subproject:
+      keymap: penguinwokrs
+    volumes:
+      - .:/qmk
